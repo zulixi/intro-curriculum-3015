@@ -15,13 +15,13 @@ let server = http.createServer((req, res) => {
         res.write(jade.renderFile('./form.jade', {
           path: req.url,
           firstItem: '焼き肉',
-          secondImtem: 'しゃぶしゃぶ'
+          secondItem: 'しゃぶしゃぶ'
         }));
       } else if (req.url === '/enquetes/rice-bread') {
         res.write(jade.renderFile('./form.jade', {
           path: req.url,
           firstItem: 'ごはん',
-          secondImtem: 'パン'
+          secondItem: 'パン'
         }));
       }
       res.end();
